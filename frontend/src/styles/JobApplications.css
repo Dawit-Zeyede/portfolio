@@ -1,0 +1,88 @@
+.applications-container {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.applications-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.loading-message, .error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+.error-message {
+  color: #e74c3c;
+}
+
+.no-applications-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f39c12;
+  font-style: italic;
+}
+
+.applications-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.application-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.application-item:hover {
+  transform: translateY(-5px);
+}
+
+.applicant-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.application-status {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.application-date {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .applications-container {
+    padding: 20px;
+  }
+
+  .applications-header {
+    font-size: 1.8rem;
+  }
+
+  .application-item {
+    padding: 15px;
+  }
+
+  .applicant-name {
+    font-size: 1.3rem;
+  }
+}

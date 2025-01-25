@@ -1,0 +1,97 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.application-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.job-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-applications-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #f39c12;
+  font-style: italic;
+}
+
+.loading-message, .error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #0077cc;
+}
+
+.error-message {
+  color: #e74c3c;
+}
+
+.applications-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.application-item {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.application-item:hover {
+  transform: translateY(-5px);
+}
+
+.student-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+
+.student-email {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+.application-date {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .application-container {
+    padding: 20px;
+  }
+
+  .job-header {
+    font-size: 1.5rem;
+  }
+
+  .application-item {
+    padding: 10px;
+  }
+}
